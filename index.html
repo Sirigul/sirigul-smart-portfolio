@@ -2,70 +2,152 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sirigul Smart Portfolio</title>
 
 <style>
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:'Segoe UI',sans-serif;
     background:#f8f6ef;
 }
 
 header{
     background:#112D6B;
     color:white;
-    padding:20px;
-    text-align:center;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#D4AF37;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
 }
 
 .hero{
-    padding:80px 20px;
-    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:80px 10%;
+    background:linear-gradient(135deg,#112D6B,#2956b2);
+    color:white;
 }
 
-.hero h1{
-    color:#112D6B;
+.hero img{
+    width:320px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.hero-content{
+    margin-left:50px;
+}
+
+.hero-content h1{
     font-size:48px;
+    margin-bottom:10px;
 }
 
-.hero p{
-    font-size:22px;
+.hero-content p{
+    font-size:20px;
+    line-height:1.8;
 }
 
 .btn{
     display:inline-block;
-    padding:12px 24px;
     background:#D4AF37;
     color:#112D6B;
     text-decoration:none;
+    padding:12px 25px;
     border-radius:30px;
+    margin-top:15px;
     font-weight:bold;
 }
 
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:60px 10%;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#112D6B;
+    margin:0;
+}
+
+.card p{
+    color:#666;
+}
+
+.section-title{
+    text-align:center;
+    color:#112D6B;
+    margin-top:20px;
+}
+
 footer{
-    margin-top:50px;
     background:#112D6B;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px;
+    margin-top:50px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
-<h2>Sirigul Smart Portfolio</h2>
+
+<div class="logo">
+SSP
+</div>
+
+<div class="menu">
+<a href="#">หน้าแรก</a>
+<a href="#">ประวัติ</a>
+<a href="#">งานสอน</a>
+<a href="#">PA</a>
+<a href="#">วิจัย</a>
+<a href="#">ติดต่อ</a>
+</div>
+
 </header>
 
 <section class="hero">
+
+<div>
+<img src="8.jpg">
+</div>
+
+<div class="hero-content">
 
 <h1>ดร.สิริกุล บุญเรืองศักดิ์</h1>
 
 <p>
 ครูชำนาญการ<br>
+กลุ่มสาระการเรียนรู้การงานอาชีพ<br>
 โรงเรียนสุรศักดิ์มนตรี
 </p>
 
@@ -77,11 +159,42 @@ Teaching • Research • Innovation
 ดูแฟ้มสะสมผลงาน
 </a>
 
+</div>
+
+</section>
+
+<h1 class="section-title">
+Dashboard
+</h1>
+
+<section class="stats">
+
+<div class="card">
+<h2>125</h2>
+<p>อบรม</p>
+</div>
+
+<div class="card">
+<h2>220</h2>
+<p>เกียรติบัตร</p>
+</div>
+
+<div class="card">
+<h2>10</h2>
+<p>วิจัย</p>
+</div>
+
+<div class="card">
+<h2>3</h2>
+<p>นวัตกรรม</p>
+</div>
+
 </section>
 
 <footer>
 
-Sirigul Smart Portfolio
+Sirigul Smart Portfolio<br>
+Teaching • Research • Innovation
 
 </footer>
 
